@@ -1,0 +1,314 @@
+{
+  "scan_time": "2026-04-14T12:11:49.931132",
+  "total_alerts": 4,
+  "critical": 2,
+  "high": 2,
+  "medium": 0,
+  "alerts": [
+    {
+      "alert_id": "AEGISFA-0001",
+      "timestamp": "2026-04-14T12:11:49.930579",
+      "severity": "critical",
+      "title": "Brute Force Attack Detected from 192.168.1.200",
+      "description": "5 failed login attempts from 192.168.1.200 - possible brute force attack matching MITRE ATT&CK T1110",
+      "mitre_technique": "T1110 - Brute Force",
+      "event_count": 5,
+      "source_ips": [
+        "192.168.1.200"
+      ],
+      "affected_hosts": [
+        "AEGISFA-HOST"
+      ],
+      "raw_events": [
+        {
+          "timestamp": "Apr 14 16:09:52",
+          "host": "AEGISFA-HOST",
+          "source": "sshd",
+          "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+          "parsed_at": "2026-04-14T12:10:08.795148",
+          "category": "authentication_failure",
+          "severity": "high"
+        },
+        {
+          "timestamp": "Apr 14 16:09:52",
+          "host": "AEGISFA-HOST",
+          "source": "sshd",
+          "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+          "parsed_at": "2026-04-14T12:10:08.795152",
+          "category": "authentication_failure",
+          "severity": "high"
+        },
+        {
+          "timestamp": "Apr 14 16:09:52",
+          "host": "AEGISFA-HOST",
+          "source": "sshd",
+          "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+          "parsed_at": "2026-04-14T12:10:08.795156",
+          "category": "authentication_failure",
+          "severity": "high"
+        },
+        {
+          "timestamp": "Apr 14 16:09:52",
+          "host": "AEGISFA-HOST",
+          "source": "sshd",
+          "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+          "parsed_at": "2026-04-14T12:10:08.795159",
+          "category": "authentication_failure",
+          "severity": "high"
+        },
+        {
+          "timestamp": "Apr 14 16:09:52",
+          "host": "AEGISFA-HOST",
+          "source": "sshd",
+          "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+          "parsed_at": "2026-04-14T12:10:08.795165",
+          "category": "authentication_failure",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "alert_id": "AEGISFA-0002",
+      "timestamp": "2026-04-14T12:11:49.930691",
+      "severity": "high",
+      "title": "Excessive Credential Manager Access",
+      "description": "20 credential read operations detected - possible credential dumping or harvesting activity",
+      "mitre_technique": "T1555 - Credentials from Password Stores",
+      "event_count": 20,
+      "source_ips": [],
+      "affected_hosts": [
+        "WINDOWS-HOST"
+      ],
+      "raw_events": [
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Read Credential    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795062",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795070",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795076",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795080",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795084",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795087",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795091",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795096",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795099",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795103",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795107",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795111",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795115",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795118",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795122",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795125",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795129",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795132",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795136",
+          "category": "credential_access",
+          "severity": "medium"
+        },
+        {
+          "timestamp": "Apr 14 15:46:08",
+          "host": "WINDOWS-HOST",
+          "source": "WinEvent",
+          "message": "ID=5379 Credential Manager credentials were read.    Subject:  #011Security ID:#011#011S-1-5-21-2621204580-2881008125-2812119921-1001  #011Account Name:#011#011bossm  #011Account Domain:#011#011HUNTERM  #011Logon ID:#011#0110xD6FE0  #011Read Operation:#011#011Enumerate Credentials    This event occurs when a user performs a read operation on stored credentials in Credential Manager.",
+          "parsed_at": "2026-04-14T12:10:08.795140",
+          "category": "credential_access",
+          "severity": "medium"
+        }
+      ]
+    },
+    {
+      "alert_id": "AEGISFA-0003",
+      "timestamp": "2026-04-14T12:11:49.930826",
+      "severity": "high",
+      "title": "RDP Access Attempt Blocked",
+      "description": "Firewall blocked 1 RDP connection attempt(s) on port 3389 - possible remote access attack",
+      "mitre_technique": "T1021.001 - Remote Desktop Protocol",
+      "event_count": 1,
+      "source_ips": [],
+      "affected_hosts": [
+        "AEGISFA-HOST"
+      ],
+      "raw_events": [
+        {
+          "timestamp": "Apr 14 16:09:49",
+          "host": "AEGISFA-HOST",
+          "source": "firewall",
+          "message": "BLOCKED src=203.0.113.45 dst=10.0.0.1 port=3389 proto=TCP rule=DROP",
+          "parsed_at": "2026-04-14T12:10:08.795143",
+          "category": "firewall_event",
+          "severity": "medium"
+        }
+      ]
+    },
+    {
+      "alert_id": "AEGISFA-0004",
+      "timestamp": "2026-04-14T12:11:49.930978",
+      "severity": "critical",
+      "title": "Malware Detected and Quarantined",
+      "description": "1 malware detection(s) found - immediate investigation recommended",
+      "mitre_technique": "T1204 - User Execution",
+      "event_count": 1,
+      "source_ips": [],
+      "affected_hosts": [
+        "AEGISFA-HOST"
+      ],
+      "raw_events": [
+        {
+          "timestamp": "Apr 14 16:10:00",
+          "host": "AEGISFA-HOST",
+          "source": "antivirus",
+          "message": "THREAT_DETECTED file=C:\\Users\\admin\\Downloads\\invoice.exe type=Trojan action=QUARANTINED",
+          "parsed_at": "2026-04-14T12:10:08.795168",
+          "category": "threat_detected",
+          "severity": "critical"
+        }
+      ]
+    }
+  ]
+}
