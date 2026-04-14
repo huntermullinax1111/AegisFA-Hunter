@@ -1,0 +1,11 @@
+[
+  {
+    "timestamp": "Apr 14 16:10:00",
+    "host": "AEGISFA-HOST",
+    "source": "antivirus",
+    "message": "THREAT_DETECTED file=C:\\Users\\admin\\Downloads\\invoice.exe type=Trojan action=QUARANTINED",
+    "parsed_at": "2026-04-14T12:10:08.795168",
+    "category": "threat_detected",
+    "severity": "critical"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "timestamp": "Apr 14 15:41:48",
+    "host": "AEGISFA-HOST",
+    "source": "sshd",
+    "message": "Failed password for root from 192.168.1.100 port 22 ssh2",
+    "parsed_at": "2026-04-14T12:10:08.795040",
+    "category": "authentication_failure",
+    "severity": "high"
+  },
+  {
+    "timestamp": "Apr 14 16:09:52",
+    "host": "AEGISFA-HOST",
+    "source": "sshd",
+    "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+    "parsed_at": "2026-04-14T12:10:08.795148",
+    "category": "authentication_failure",
+    "severity": "high"
+  },
+  {
+    "timestamp": "Apr 14 16:09:52",
+    "host": "AEGISFA-HOST",
+    "source": "sshd",
+    "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+    "parsed_at": "2026-04-14T12:10:08.795152",
+    "category": "authentication_failure",
+    "severity": "high"
+  },
+  {
+    "timestamp": "Apr 14 16:09:52",
+    "host": "AEGISFA-HOST",
+    "source": "sshd",
+    "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+    "parsed_at": "2026-04-14T12:10:08.795156",
+    "category": "authentication_failure",
+    "severity": "high"
+  },
+  {
+    "timestamp": "Apr 14 16:09:52",
+    "host": "AEGISFA-HOST",
+    "source": "sshd",
+    "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+    "parsed_at": "2026-04-14T12:10:08.795159",
+    "category": "authentication_failure",
+    "severity": "high"
+  },
+  {
+    "timestamp": "Apr 14 16:09:52",
+    "host": "AEGISFA-HOST",
+    "source": "sshd",
+    "message": "Failed password for admin from 192.168.1.200 port 22 ssh2",
+    "parsed_at": "2026-04-14T12:10:08.795165",
+    "category": "authentication_failure",
+    "severity": "high"
+  }
+]
